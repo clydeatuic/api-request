@@ -45,6 +45,7 @@ var App = function () {
 				app.render(html, document.querySelector("#episodesList"));
 			}).catch(function (error) {
 				console.log(error);
+				app.render(error, document.querySelector("#episodesList"));
 			});
 		}
 	}]);
